@@ -18,7 +18,7 @@ RUN buildDeps='build-essential git cmake autoconf ca-certificates unzip' \
     && make install \
     && cd / \
     && rm -rf click \
-    && git clone https://github.com/rriggio/upflib upflib \
+    && git clone https://github.com/lightedge/upflib upflib \
     && cd upflib \
     && cmake -DCMAKE_BUILD_TYPE=Release \
              -DBUILD_SHARED_LIBS=OFF \
